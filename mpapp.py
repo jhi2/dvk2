@@ -1,5 +1,8 @@
 import turtle as t
 import random as rand
+from pathlib import Path
+dadpth = f"{Path.cwd()}\\dad.gif"
+badpth = f"{Path.cwd()}\\bad.gif"
 def gotoRandPos(turtle):
     turtle.penup()
     turtle.goto(rand.randint(0,360),rand.randint(0,360))
