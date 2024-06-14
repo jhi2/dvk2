@@ -1,13 +1,16 @@
 import turtle as t
 import random as rand
+from pathlib import Path
+dadpth = f"{Path.cwd()}\\player.gif"
+badpth = f"{Path.cwd()}\\bad.gif"
 def gotoRandPos(turtle):
     turtle.penup()
     turtle.goto(rand.randint(0,360),rand.randint(0,360))
 print("Icon by icons8.com")
 screen = t.Screen()
 screen.title("Dad vs. the Kaisers")
-screen.register_shape("player.gif")
-screen.register_shape("bad.gif")
+screen.register_shape(dadpath)
+screen.register_shape(badpath)
 screen.screensize(360,360)
 screen.cv._rootwindow.resizable(False, False)
 screen.bgcolor("skyblue")
